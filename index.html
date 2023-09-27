@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="pay.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body><div class="con">
+    <form class="container" action="index.html" method="post">
+        <h1 class="mainh">Payment Form</h1>
+        <hr>
+    <h2>User Information</h2>
+    <label>Name*</label><input type="text" minlength="3" maxlength="20" placeholder="i.e. Madhav" required>
+    <br><br>
+     <fieldset>
+        <legend>Gender</legend>
+        <label>Male <input type="radio" name="gender" required></label>Female <input type="radio" name="gender" required><label></label>
+     </fieldset><br><br>
+     <label>Adress</label><br>
+     <textarea name="Adress" id="adress" cols="50" rows="10" placeholder="Enter Your Adress"></textarea>
+     <br><br>
+     <label>E-mail:</label><input type="email" placeholder="abc123@mail.com" name="email" id="email" required>
+     <br><br><label>Password</label><input type="password" placeholder="●●●●●●●●●●●●" name="pass" id="pass" required>
+     <br><br>
+     <h2>Payment Information</h2>
+     <br>     <img src="card.png" width="150px">
+     <br>
+     <label>Card Type:</label><select name="cardt" id="cardt">
+        <option>--Select Card Type--</option>
+        <option>Visa</option> 
+        <option>Master Card</option>
+        <option>Credit Card</option>
+        <option>Debit Cart</option>
+
+
+     </select>
+     <br><br>
+
+     <label>Card Number.*</label>
+     <input type="number" name="card" id="card" placeholder="1111-2222-3333-4444" required maxlength="19" minlength="19">
+     <br><br>
+     <label>Expiration Date</label>
+     <input type="date" name="exp" id="exp">
+     <br><br>
+     <label>CVV</label>
+     <input type="number" placeholder="123" name="m" id="m" required maxlength="3" minlength="3">
+     <br><br>
+     <label>Payment Amount</label>
+     <input type="number" placeholder="₹1,00,000">
+     <br><br><h3>
+     <input type="submit" value="Pay"></h3>
+    </form></div>
+</body>
+</html>
